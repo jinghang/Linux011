@@ -15,3 +15,10 @@ Linux 0.11 版本源码
 主页在 http://jinghang.github.io/Linux011/
 
 http://wiki.osdev.org/Main_Page
+
+# 源码说明
+- src/V0.11/ 目录放的是当年Linus写的源码，
+- src/V0.11_gcc4/ 目录放的是可以在gcc4编译通过的内核源码，
+- src/V0.11_rh9/ 目录放的是在RetHat9系统下编译通过的内核源码。
+
+
