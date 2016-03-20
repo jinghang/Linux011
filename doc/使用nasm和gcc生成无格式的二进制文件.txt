@@ -1,0 +1,17 @@
+提供下面两种方法编译生成一个没有格式的二进制文件：
+1. 
+　　gcc -c test.c 
+　　ld -o test -Ttext 0x0 -e main test.o
+　　objcopy -R .note -R .comment -S -O binary test test.bin
+
+2.
+　　gcc -c test.c 
+　　ld test.o -o test.bin -Ttext 0x0 -e main -oformat binary
+
+　　现在假设我们有一个段使用汇编编写的程序，而我们又需要将它加入我们最后生成的文件中，我们可以使用下面的方法：
+
+　　nasm -f elf other.asm -o other.o
+　　gcc -c test.c 
+　　ld other.o main.o  -o kernal.bin -Ttext 0x0 -e _mian  --oformat binary 
+
+　　目前linux大多都是elf格式目标文件，所以我们首先将汇编程序编译为elf的目标文件，然后使用ld将多个目标文件链接到一起即可。
