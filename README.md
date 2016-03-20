@@ -13,3 +13,5 @@ Linux 0.11 版本源码
 
 
 主页在 http://jinghang.github.io/Linux011/
+
+http://wiki.osdev.org/Main_Page
