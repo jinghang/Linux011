@@ -21,4 +21,9 @@ http://wiki.osdev.org/Main_Page
 - src/V0.11_gcc4/ 目录放的是可以在gcc4编译通过的内核源码，
 - src/V0.11_rh9/ 目录放的是在RetHat9系统下编译通过的内核源码。
 
+# 编译记录
+- 2016.4.12
+出现 strcpy 重定义 gcc5 和以前的 gcc 对 extern inline 理解不同，给 CFLAGS 加 -fgnu89-inline 表示使用旧版的 gcc ，详情[http://blog.csdn.net/force_eagle/article/details/11106571](http://blog.csdn.net/force_eagle/article/details/11106571)<br/>
+__stack_chk_fail找不到引用问题 CFLAGS 加 -fno-stack-protector
+
 

@@ -11,7 +11,7 @@ AS	=as
 LD	=ld
 LDFLAGS	=-m elf_i386 -Ttext 0 -e startup_32
 CC	=gcc -mcpu=i386 $(RAMDISK)
-CFLAGS	=-Wall -O2 -fomit-frame-pointer 
+CFLAGS	=-Wall -O2 -fomit-frame-pointer -fgnu89-inline
 
 CPP	=cpp -nostdinc -Iinclude
 
