@@ -26,4 +26,25 @@ http://wiki.osdev.org/Main_Page
 出现 strcpy 重定义 gcc5 和以前的 gcc 对 extern inline 理解不同，给 CFLAGS 加 -fgnu89-inline 表示使用旧版的 gcc ，详情[http://blog.csdn.net/force_eagle/article/details/11106571](http://blog.csdn.net/force_eagle/article/details/11106571)<br/>
 __stack_chk_fail找不到引用问题 CFLAGS 加 -fno-stack-protector
 
+# 编译 bochs
+- 安装所需类库
+	sudo apt-get install xorg-dev
+- 配置
+	./configure --enable-debugger -- enable-disasm
+
+--enable-debugger   加入调式功能，
+--enable-disasm     反汇编，
+--enable-gdb-stub    GDB通信
+
+--enable-debugger和--enable-gdb-stub只能放一个
+http://blog.chinaunix.net/uid-26258259-id-3792406.html
+
+- 编译
+	make
+
+-安装
+	sudo make install
+
+-卸载
+	sudo make uninstall
 
