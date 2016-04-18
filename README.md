@@ -48,3 +48,7 @@ http://blog.chinaunix.net/uid-26258259-id-3792406.html
 -卸载
 	sudo make uninstall
 
+
+## gui调式
+https://code.google.com/archive/p/peter-bochs/
+
