@@ -3,7 +3,7 @@ AS	=as
 CC	=gcc -mcpu=i386
 LD	=ld
 CFLAGS	=-Wall -fstrength-reduce -fomit-frame-pointer \
-	 -nostdinc -I../include
+	 -nostdinc -fgnu89-inline -fno-stack-protector -I../include
 CPP	=gcc -E -nostdinc -I../include
 
 .c.s:
