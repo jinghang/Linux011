@@ -3,7 +3,7 @@ mov ax,cs
 mov ds,ax
 mov es,ax
 call DispStr
-jmp $
+hlt
 
 DispStr:
     mov ax, BootMsg

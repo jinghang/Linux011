@@ -3,8 +3,11 @@
 megs: 32
 
 #cpu
-cpu: count=1, ips=100000000
-clock: sync=slowddown,time0=local
+#cpu: count=1, ips=100000000
+#clock: sync=slowddown
+cpu: ips=150000000
+clock: sync=both
+
 
 # filename of ROM images
 #romimage: file=/usr/share/bochs/BIOS-bochs-latest
