@@ -28,29 +28,33 @@ __stack_chk_fail找不到引用问题 CFLAGS 加 -fno-stack-protector
 
 # 编译 bochs
 - 安装所需类库
-	sudo apt-get install xorg-dev
+	`sudo apt-get install xorg-dev`
 - 配置
-	./configure --enable-debugger -- enable-disasm
+	`./configure --enable-debugger -- enable-disasm`
 
---enable-debugger   加入调式功能，
---enable-disasm     反汇编，
---enable-gdb-stub    GDB通信
+	`--enable-debugger`   加入调式功能，
+	`--enable-disasm`     反汇编，
+	`--enable-gdb-stub`    GDB通信
 
---enable-debugger和--enable-gdb-stub只能放一个
-http://blog.chinaunix.net/uid-26258259-id-3792406.html
+	`--enable-debugger` 和 `--enable-gdb-stub` 只能放一个 http://blog.chinaunix.net/uid-26258259-id-3792406.html
 
 - 编译
-	make
+	`make`
 
--安装
-	sudo make install
+- 安装
+	`sudo make install`
 
--卸载
-	sudo make uninstall
+- 卸载
+	`sudo make uninstall`
 
 
 ## gui调式
 https://code.google.com/archive/p/peter-bochs/
 
 https://github.com/mcheung63/GKD
+
+
+# 寄存器说明
+http://www.cnblogs.com/zhaoyl/archive/2012/05/15/2501972.html
+http://blog.csdn.net/knxw0001/article/details/7249248
 
