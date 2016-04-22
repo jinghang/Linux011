@@ -55,6 +55,6 @@ https://github.com/mcheung63/GKD
 
 
 # 寄存器说明
-http://www.cnblogs.com/zhaoyl/archive/2012/05/15/2501972.html
+http://www.cnblogs.com/zhaoyl/archive/2012/05/15/2501972.html<br/>
 http://blog.csdn.net/knxw0001/article/details/7249248
 
